@@ -1,0 +1,27 @@
+{
+  "rentalCarApp": {
+    "carImage": {
+      "home": {
+        "title": "Car Images",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Car Image",
+        "createOrEditLabel": "Create or edit a Car Image",
+        "search": "Search for Car Image",
+        "notFound": "No Car Images found"
+      },
+      "created": "A new Car Image is created with identifier {{ param }}",
+      "updated": "A Car Image is updated with identifier {{ param }}",
+      "deleted": "A Car Image is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Car Image {{ id }}?"
+      },
+      "detail": {
+        "title": "Car Image"
+      },
+      "id": "ID",
+      "carId": "Car Id",
+      "imagePath": "Image Path",
+      "date": "Date"
+    }
+  }
+}

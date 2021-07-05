@@ -1,0 +1,25 @@
+{
+  "rentalCarApp": {
+    "color": {
+      "home": {
+        "title": "Colors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Color",
+        "createOrEditLabel": "Create or edit a Color",
+        "search": "Search for Color",
+        "notFound": "No Colors found"
+      },
+      "created": "A new Color is created with identifier {{ param }}",
+      "updated": "A Color is updated with identifier {{ param }}",
+      "deleted": "A Color is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Color"
+      },
+      "id": "ID",
+      "colorName": "Color Name"
+    }
+  }
+}

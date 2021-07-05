@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "fieldName": "colorName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceImpl",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": true,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "Color",
+  "changelogDate": "20210623144032"
+}

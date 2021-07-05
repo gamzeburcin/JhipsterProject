@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="carImage">
+      <h2 data-cy="carImageDetailsHeading"><span jhiTranslate="rentalCarApp.carImage.detail.title">Car Image</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ carImage.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="rentalCarApp.carImage.carId">Car Id</span></dt>
+        <dd>
+          <span>{{ carImage.carId }}</span>
+        </dd>
+        <dt><span jhiTranslate="rentalCarApp.carImage.imagePath">Image Path</span></dt>
+        <dd>
+          <span>{{ carImage.imagePath }}</span>
+        </dd>
+        <dt><span jhiTranslate="rentalCarApp.carImage.date">Date</span></dt>
+        <dd>
+          <span>{{ carImage.date | formatMediumDatetime }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/car-image', carImage.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

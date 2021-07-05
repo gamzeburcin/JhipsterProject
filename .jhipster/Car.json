@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "fieldName": "brandId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "colorId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "modelYear",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dailyPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceImpl",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": true,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "Car",
+  "changelogDate": "20210623152333"
+}

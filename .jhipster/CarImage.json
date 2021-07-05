@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "fieldName": "carId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "imagePath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceImpl",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": true,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "CarImage",
+  "changelogDate": "20210623143746"
+}

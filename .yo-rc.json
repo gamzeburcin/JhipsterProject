@@ -41,6 +41,8 @@
     "jwtSecretKey": "MTY5ODQ4Yzg5ZGY5NzhiNGExZWZmOTEyZTQwMjg3OTQxMTgyMGRmNmNhNTQ5ZDhlMmVkMzlmYjc3Nzk5NTdmZDZlMzI0MGYxMjk1NTliNmNlNmJlYzIyYTljMDA2NmFkM2IwMDc5ODgyYzBjNzIwOWYzMmEwMzc4ODU5MTBiNTI=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "tr"]
+    "languages": ["en", "tr"],
+    "lastLiquibaseTimestamp": 1624461813000,
+    "entities": ["Brand", "CarImage", "Color", "Customer", "Payment", "Rental", "Car"]
   }
 }

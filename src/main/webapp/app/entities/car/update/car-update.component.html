@@ -1,0 +1,73 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-car-heading" data-cy="CarCreateUpdateHeading" jhiTranslate="rentalCarApp.car.home.createOrEditLabel">
+        Create or edit a Car
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="form-group" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-control-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="rentalCarApp.car.brandId" for="field_brandId">Brand Id</label>
+          <input type="number" class="form-control" name="brandId" id="field_brandId" data-cy="brandId" formControlName="brandId" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="rentalCarApp.car.colorId" for="field_colorId">Color Id</label>
+          <input type="number" class="form-control" name="colorId" id="field_colorId" data-cy="colorId" formControlName="colorId" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="rentalCarApp.car.modelYear" for="field_modelYear">Model Year</label>
+          <input type="text" class="form-control" name="modelYear" id="field_modelYear" data-cy="modelYear" formControlName="modelYear" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="rentalCarApp.car.dailyPrice" for="field_dailyPrice">Daily Price</label>
+          <input
+            type="number"
+            class="form-control"
+            name="dailyPrice"
+            id="field_dailyPrice"
+            data-cy="dailyPrice"
+            formControlName="dailyPrice"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="rentalCarApp.car.description" for="field_description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            name="description"
+            id="field_description"
+            data-cy="description"
+            formControlName="description"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

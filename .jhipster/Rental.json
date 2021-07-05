@@ -1,0 +1,30 @@
+{
+  "fields": [
+    {
+      "fieldName": "rentDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "returnDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "customerId",
+      "fieldType": "Long",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "carId",
+      "fieldType": "Long",
+      "fieldValidateRules": []
+    }
+  ],
+  "relationships": [],
+  "service": "serviceImpl",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": true,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "Rental",
+  "changelogDate": "20210623150627"
+}
